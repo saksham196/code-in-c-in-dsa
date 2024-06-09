@@ -16,3 +16,19 @@ int main(){
 	
 }
 decimal to binary conversion
+/////////////number of 1 bits code of leetcode/////////////
+class Solution {
+public:
+    int hammingWeight(int n) {
+        int count=0;
+        while(n!=0){
+            if(n&1){
+                count++;
+
+            }
+            n=n>>1;
+            
+        }
+        return count;
+    }
+};// number of 1 bits code of leetcode
