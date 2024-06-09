@@ -32,3 +32,20 @@ public:
         return count;
     }
 };// number of 1 bits code of leetcode
+problem 1281 of keetcode subtract the product and sum of a number//////////
+class Solution {
+public:
+    int subtractProductAndSum(int n) {
+     int product=1;
+     int sum=0;
+     while(n!=0){
+     int digit=n%10; 
+     product=product*digit;
+     sum=sum+digit;
+     n=n/10;
+     }
+     int answer=product-sum;
+     return answer;
+
+    }
+};
